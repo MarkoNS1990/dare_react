@@ -16,13 +16,13 @@ export default class SimpleCounterClass extends Component {
 
   decrementCount = () => {
     this.setState( () => {
-
       if(this.state.count < 1) {
-       return this.state.count = 0;
-      } else {
-       return this.state.count = this.state.count - 1;
+        return this.state.count = 0;
       }
-    }
+      console.log(this.state.count);
+       this.state.count = this.state.count + 1 - 1;
+
+      }
     )
   }
 
