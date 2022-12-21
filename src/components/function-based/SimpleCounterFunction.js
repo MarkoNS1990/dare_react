@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CounterFun } from "../counter-fun/counterFun";
 
 const SimpleCounterFunction = () => {
   // napraviti state koji se menja pritiskom na klik buttona preko useState hook-a
@@ -23,10 +24,11 @@ const SimpleCounterFunction = () => {
   return (
     <div>
       <h3>Counter function-based</h3>
-      <p>{count}</p>
-      <button onClick={incrementCount}>Add 1</button>
-      <button onClick={decrementCount}>Substract 1</button>
-      <button onClick={resetCount}>Reset</button>
+      <CounterFun 
+      count={count} 
+      incrementCount={incrementCount} 
+      decrementCount={decrementCount} 
+      resetCount={resetCount} />
     </div>
   );
 };

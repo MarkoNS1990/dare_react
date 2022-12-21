@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CounterClass from "../counter-class/counterClass";
 
 export default class SimpleCounterClass extends Component {
   // napraviti state koji se menja pritiskom na klik buttona
@@ -12,8 +13,6 @@ export default class SimpleCounterClass extends Component {
       count: this.state.count + 1,
     });
   };
-
-// <<<<<<< HEAD
   // decrementCount = () => {
   //   this.setState( () => {
   //     if(this.state.count < 1) {
@@ -25,7 +24,7 @@ export default class SimpleCounterClass extends Component {
   //     }
   //   )
   // }
-// =======
+
   // 1. Nacin (workaround za tvoje resenje sa StrictMode)
   decrementCount1 = () => {
     // kada prosledjujes callback u setState onda ti je trenutni state taj argument koji prosledis
@@ -75,13 +74,12 @@ export default class SimpleCounterClass extends Component {
     return (
       <div>
         <h3>Counter class-based</h3>
-
-        <p>{this.state.count}</p>
-        <button onClick={this.incrementCount}>Add 1</button>
-        <button onClick={this.decrementCount1}>Substract 1(prvi nacin)</button>
-        <button onClick={this.decrementCount2}>Substract 1(drugi nacin)</button>
-        <button onClick={this.decrementCount3}>Substract 1(treci nacin)</button>
-        <button onClick={this.resetCount}>Reset</button>
+        <CounterClass 
+        count={this.state.count}
+        incrementCount={this.incrementCount}
+        decrementCount2={this.decrementCount2} 
+        resetCount={this.resetCount}
+        />
       </div>
     );
   }
