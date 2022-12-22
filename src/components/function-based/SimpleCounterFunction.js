@@ -13,8 +13,22 @@ const SimpleCounterFunction = () => {
     const countParagraph = document.querySelector('.countFun');
     if(countParagraph.innerHTML < 0) {
       countParagraph.classList.add('red');
-    }else {
-      countParagraph.classList.remove('red');
+      if(countParagraph.classList.contains('red')) {
+        countParagraph.classList.remove('green');
+      }
+    }else if(countParagraph.innerHTML > 0) {
+      countParagraph.classList.add('green');
+      if(countParagraph.classList.contains('green')) {
+        countParagraph.classList.remove('red');
+      }
+    }
+    else {
+      if(countParagraph.classList.contains('red')) {
+        countParagraph.classList.remove('red');
+      }
+      if(countParagraph.classList.contains('green')) {
+        countParagraph.classList.remove('green');
+      }
     }
   }
 

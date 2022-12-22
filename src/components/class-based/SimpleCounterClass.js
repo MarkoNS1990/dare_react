@@ -11,10 +11,24 @@ export default class SimpleCounterClass extends Component {
   styleHandler = () => {
     const count = document.querySelector('.countClass');
 
-    if(this.state.count < 0) {
+    if(count.innerHTML < 0) {
       count.classList.add('red');
-    }else {
-      count.classList.remove('red');
+      if(count.classList.contains('red')) {
+        count.classList.remove('green');
+      }
+    }else if(count.innerHTML > 0) {
+      count.classList.add('green');
+      if(count.classList.contains('green')) {
+        count.classList.remove('red');
+      }
+    }
+    else {
+      if(count.classList.contains('red')) {
+        count.classList.remove('red');
+      }
+      if(count.classList.contains('green')) {
+        count.classList.remove('green');
+      }
     }
   }
 
