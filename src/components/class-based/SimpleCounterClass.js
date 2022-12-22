@@ -8,65 +8,67 @@ export default class SimpleCounterClass extends Component {
     count: 0,
   };
 
+  styleHandler = () => {
+    const count = document.querySelector('.countClass');
+
+    if(this.state.count < 0) {
+      count.classList.add('red');
+    }else {
+      count.classList.remove('red');
+    }
+  }
+
   incrementCount = () => {
     this.setState({
       count: this.state.count + 1,
+    }, ()=> {
+      this.styleHandler();
     });
   };
-  // decrementCount = () => {
-  //   this.setState( () => {
-  //     if(this.state.count < 1) {
-  //       return this.state.count = 0;
-  //     }
-  //     console.log(this.state.count);
-  //      this.state.count = this.state.count + 1 - 1;
-
-  //     }
-  //   )
-  // }
 
   // 1. Nacin (workaround za tvoje resenje sa StrictMode)
-  decrementCount1 = () => {
-    // kada prosledjujes callback u setState onda ti je trenutni state taj argument koji prosledis
-    this.setState((currentState) => {
-      console.log("state: ", currentState);
-      if (this.state.count < 1) {
-        return (this.state.count = 0);
-      } else {
-        // pravis novi objekat sa kopijom trenutnog state-a i menjas mu trenutni property count za -1
-        return { ...this.state, count: currentState.count - 1 };
-      }
-    });
-  };
+  // decrementCount1 = () => {
+  //   // kada prosledjujes callback u setState onda ti je trenutni state taj argument koji prosledis
+  //   this.setState((currentState) => {
+  //     console.log("state: ", currentState);
+  //     if (this.state.count < 1) {
+  //       return (this.state.count = 0);
+  //     } else {
+  //       // pravis novi objekat sa kopijom trenutnog state-a i menjas mu trenutni property count za -1
+  //       return { ...this.state, count: currentState.count - 1 };
+  //     }
+  //   });
+  // };
 
   // 2.Nacin
   decrementCount2 = () => {
     // jednostavniji nacin, setujes state posebno za svaki od slucajeva
-    if (this.state.count < 1) {
-      this.setState({
-        count: 0,
-      });
-    } else {
-       this.setState({
-        count: this.state.count - 1,
-      });
-    }
-  };
+    // if (this.state.count < 1) {
+    //   this.setState({
+    //     count: 0,
+    //   });
+    // } else {
+    //    this.setState({
+    //     count: this.state.count - 1,
+    //   });
+    // }
 
-  //  3. Nacin - React.Strict mode izaziva dupli render na promenu state-a, samo skloni wrapper iz index.js da ti ne bude strict mode i radice ti tvoj nacin
-  decrementCount3 = () => {
-    this.setState(() => {
-      if (this.state.count < 1) {
-        return (this.state.count = 0);
-      } else {
-        return (this.state.count = this.state.count - 1);
-      }
+    this.setState({
+      count: this.state.count - 1,
+    }, ()=> {
+      this.styleHandler();
     });
+
+
   };
 
   resetCount = () => {
+    this.styleHandler();
+
     this.setState({
       count: 0,
+    }, () => {
+      this.styleHandler();
     });
   };
 
