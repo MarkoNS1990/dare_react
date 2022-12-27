@@ -1,0 +1,32 @@
+.counter-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px;
+    padding: 20px;
+    min-width: 400px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+}
+
+.btn-add {
+  background-color: #7bf1a8;
+}
+
+.btn-sub {
+  background-color: #ff686b;
+}
+
+.btn-res {
+  background-color: #ffef9f;
+}

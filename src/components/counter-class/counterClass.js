@@ -8,9 +8,9 @@ export default class CounterClass extends Component {
     return (
       <div>       
         <p className='countClass'>{count}</p>
-        <button onClick={incrementCount}>Add 1</button>
-        <button onClick={decrementCount2}>Substract 1(drugi nacin)</button>
-        <button onClick={resetCount}>Reset</button>
+        <button className='btn btn-add' onClick={incrementCount}>Add 1</button>
+        <button className='btn btn-sub' onClick={decrementCount2}>Substract 1(drugi nacin)</button>
+        <button className='btn btn-res' onClick={resetCount}>Reset</button>
       </div>
     )
   }

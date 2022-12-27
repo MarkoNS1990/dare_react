@@ -48,7 +48,7 @@ const SimpleCounterFunction = () => {
   }
 
   return (
-    <div>
+    <div className="card">
       <h3>Counter function-based</h3>
       <CounterFun 
       count={count} 

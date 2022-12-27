@@ -6,9 +6,9 @@ export const CounterFun = ({count, incrementCount, decrementCount, resetCount}) 
   return (
     <div>
         <p className='countFun'>{count}</p>
-        <button onClick={incrementCount}>Add 1</button>
-        <button onClick={decrementCount}>Substract 1</button>
-        <button onClick={resetCount}>Reset</button>
+        <button className='btn btn-add' onClick={incrementCount}>Add 1</button>
+        <button className='btn btn-sub' onClick={decrementCount}>Substract 1</button>
+        <button className='btn btn-res' onClick={resetCount}>Reset</button>
     </div>
   )
 }

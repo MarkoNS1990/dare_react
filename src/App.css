@@ -1,5 +1,22 @@
 .App {
   text-align: center;
+  padding: 40px;
+}
+
+.btn-toggle {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  background-color: #61dafb;
+  transition: all ease 1s;
+}
+
+.btn-toggle--hide {
+  background-color: purple;
+  color: #fff;
 }
 
 .App-logo {

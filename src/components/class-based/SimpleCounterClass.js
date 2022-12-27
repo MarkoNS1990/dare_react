@@ -88,7 +88,7 @@ export default class SimpleCounterClass extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h3>Counter class-based</h3>
         <CounterClass 
         count={this.state.count}
