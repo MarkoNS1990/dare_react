@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import { CounterWrapper } from './components/counter-wrapper/counterWrapper';
+import { Pl } from './components/clubs-list/pl';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <button className='btn-toggle' onClick={()=> btnHandler()}>{isToggled ? 'Sakrij brojace' : 'Prikazi brojace'  }</button>
       {isToggled && <CounterWrapper/>}
+      <Pl/>
     </div>
   );
 }

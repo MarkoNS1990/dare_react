@@ -1,0 +1,122 @@
+[
+    {
+        "id": "0",
+        "team": "Arsenal",
+        "stadium": "Emirates Stadium",
+        "nickname": "Tobdzije"
+    },
+    {
+        "id": "1",
+        "team": "Newcaste United",
+        "stadium": "St. James' Park",
+        "nickname": "Svrake"
+    },
+    {
+        "id": "2",
+        "team": "Machester City",
+        "stadium": "Etihad Stadium",
+        "nickname": "Gradjani"
+    },
+    {
+        "id": "3",
+        "team": "Tottenham Hotspur",
+        "stadium": "Tottenham Hotspur Stadium",
+        "nickname": "Pevci"
+    },
+    {
+        "id": "4",
+        "team": "Manchester United",
+        "stadium": "Old Trafford",
+        "nickname": "Djavoli"
+    },
+    {
+        "id": "5",
+        "team": "Liverpool",
+        "stadium": "Anfield",
+        "nickname": "Crveni"
+    },
+    {
+        "id": "6",
+        "team": "Brighton and Hove Albion",
+        "stadium": "Amex Stadium",
+        "nickname": "Galebovi"
+    },
+    {
+        "id": "7",
+        "team": "Chelsea",
+        "stadium": "Stamford Bridge",
+        "nickname": "Plavci"
+    },
+    {
+        "id": "8",
+        "team": "Fulham",
+        "stadium": "Craven Cottage",
+        "nickname": "The Cottagers"
+    },
+    {
+        "id": "9",
+        "team": "Brentford",
+        "stadium": "Gtech Community Stadium",
+        "nickname": "Pcelice"
+    },
+    {
+        "id": "10",
+        "team": "Crystal Palace",
+        "stadium": "Selhurst Park",
+        "nickname": "Orlovi"
+    },
+    {
+        "id": "11",
+        "team": "Aston Villa",
+        "stadium": "Villa Park",
+        "nickname": "Birmingemska banda :D"
+    },
+    {
+        "id": "12",
+        "team": "Leicester City",
+        "stadium": "King Power Stadium",
+        "nickname": "Lisice"
+    },
+    {
+        "id": "13",
+        "team": "Bournemouth",
+        "stadium": "Vitality Stadium",
+        "nickname": "Tresnjice"
+    },
+    {
+        "id": "14",
+        "team": "Leeds United",
+        "stadium": "Elland Road",
+        "nickname": "Beli"
+    },
+    {
+        "id": "15",
+        "team": "West Ham United",
+        "stadium": "London Stadium",
+        "nickname": "Cekicari"
+    },
+    {
+        "id": "16",
+        "team": "Everton",
+        "stadium": "Goodison Park",
+        "nickname": "Karamele"
+    },
+    {
+        "id": "17",
+        "team": "Wolverhampton Wanderers",
+        "stadium": "Molineux Stadium",
+        "nickname": "Vukovi"
+    },
+    {
+        "id": "18",
+        "team": "Nottingham Forest",
+        "stadium": "The City Ground",
+        "nickname": "Sumari"
+    },
+    {
+        "id": "19",
+        "team": "Southampton",
+        "stadium": "St. Mary's Stadium",
+        "nickname": "Sveci"
+    }
+]
