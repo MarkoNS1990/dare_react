@@ -1,0 +1,7 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 20px;
+}
